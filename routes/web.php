@@ -32,7 +32,7 @@ Route::get(
 Route::get(
     '/cart',
     CartComponent::class
-);
+)->name('product.cart');
 Route::get(
     '/checkout',
     CheckoutComponent::class
