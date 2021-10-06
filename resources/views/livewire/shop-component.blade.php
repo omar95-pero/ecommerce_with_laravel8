@@ -26,19 +26,16 @@
 
 						<div class="wrap-right">
 
-							<div class="sort-item orderby ">
-								<select name="orderby" class="use-chosen" >
-									<option value="menu_order" selected="selected">Default sorting</option>
-									<option value="popularity">Sort by popularity</option>
-									<option value="rating">Sort by average rating</option>
-									<option value="date">Sort by newness</option>
+							<div class="sort-item orderby " >
+								<select name="orderby" class="use-chosen"  wire:model = "sorting">
+									<option value="date" selected="selected">sort by newness</option>
 									<option value="price">Sort by price: low to high</option>
 									<option value="price-desc">Sort by price: high to low</option>
 								</select>
 							</div>
 
 							<div class="sort-item product-per-page">
-								<select name="post-per-page" class="use-chosen" >
+								<select name="data" class="use-chosen"wire:model = "pagesSize" >
 									<option value="12" selected="selected">12 per page</option>
 									<option value="16">16 per page</option>
 									<option value="18">18 per page</option>
