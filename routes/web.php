@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\CartComponent;
+use App\Http\Livewire\CategoryComponent;
 use App\Http\Livewire\CheckoutComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\ShopComponent;
@@ -41,6 +42,10 @@ Route::get(
     '/product/{slug}',
     DetailsComponent::class
 )->name('Product.details');
+Route::get(
+    '/product-category/{category-slug}',
+    CategoryComponent::class
+)->name('product.category');
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //    return view('dashboard');
